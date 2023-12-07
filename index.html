@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=yes">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Kalkulator Segitiga</title>
+</head>
+<body>
+    <!-- header -->
+    <header class="myHeader">
+        <div id="toga">TOGA</div>
+        <div id="tg">kalkulaTOr segitiGA</div>
+    </header>
+    <!-- main -->
+    <main class="myContent">
+        <!-- nav-bar -->
+        <nav class="nav-bar">
+            <p>TOGA adalah web sederhana berguna untuk menghitung luas dan keliling segitiga.</p><br>
+            <nav class="nav-menu">
+                <a href="#JudulLuasSegitiga">Hitung Luas Segitiga</a>
+                <a href="#JudulKellSegitiga">Hitung Keliling Segitiga</a>
+            </nav><br><br>
+        </nav>
+        <!-- Luas Segitiga -->
+        <section class="LuasSegitiga">
+            <div id="JudulLuasSegitiga">
+                <h1>Luas Segitiga</h1>
+            </div>
+            <img src="asset/segitiga.jpg" alt="Segitiga">
+            <div class="RumusLuasSegitiga">
+                <p><strong>Rumus Luas Segitiga yaitu:</strong></p>
+                <div id="RLP"><b>L = 1/2 * A * T</b></div>
+                <div>Ket:</div>
+                <div>A = Alas</div>
+                <div>T = Tinggi</div>
+            </div>
+            <div id="JudulHitungLuas">
+                <h3>Hitung Luas Segitiga</h3>
+            </div>
+            <form id="myForm">
+                <div class="Inputan">
+                    <label for="alas"><b>Panjang Alas Segitiga:</b></label>
+                    <input type="number" id="alas" placeholder="Masukkan panjang alas Segitiga" required>
+                </div>
+                <div class="Inputan">
+                    <label for="tinggi"><b>Tinggi Segitiga:</b></label>
+                    <input type="number" id="tinggi" placeholder="Masukkan tinggi Segitiga" required>
+                </div>
+                <p id="demoRLP"></p>
+                <p id="demoIRLP"></p>
+                <p id="ResultLP"></p>
+                <div class="Btn">
+                    <input type="button" value="Hitung" onclick="HitungLuas()">
+                    <input type="button" value="Reset" onclick="resetFormL()">
+                </div>
+            </form>
+        </section>
+        <!-- Keliling Segitiga -->
+        <section class="KelilingSegitiga">
+            <div id="JudulKellSegitiga">
+                <h1>Keliling Segitiga</h1>
+            </div>
+            <img src="asset/segitiga.jpg" alt="Segitiga">
+            <div class="RumusKellSegitiga">
+                <p><strong>Rumus Keliling Segitiga yaitu:</strong></p>
+                <div id="RKP"><b>K = S + S + S</b></div>
+                <div>Keterangan:</div>
+                <div>S = sisi</div>
+            </div>
+            <div id="JudulHitungKeliling">
+                <h3>Hitung Keliling Segitiga</h3>
+            </div>
+            <form id="myForm">
+                <div class="InputKell">
+                    <label for="sisik"><b>Panjang sisi Segitiga:</b></label>
+                    <input type="number" id="sisik" placeholder="Masukkan panjang sisi Segitiga" required>
+                </div>
+                <p id="demoRKP"></p>
+                <p id="demoIRKP"></p>
+                <p id="ResultKP"></p>
+                <div class="Btn">
+                    <input type="button" value="Hitung" onclick="HitungKell()">
+                    <input type="button" value="Reset" onclick="resetForm()">
+                </div>
+            </form>
+        </section>
+    </main>
+    <!-- footer -->
+    <script src="js/script.js"></script> 
+</body>
+</html>
